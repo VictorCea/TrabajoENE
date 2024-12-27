@@ -1,0 +1,23 @@
+{
+  "annotations": {
+    "changelogDate": "20241226000900"
+  },
+  "dto": "no",
+  "fields": [
+    {
+      "fieldName": "nombrePlato",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cantidadPlato",
+      "fieldType": "Integer"
+    }
+  ],
+  "jpaMetamodelFiltering": false,
+  "name": "OrdenesCocina",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

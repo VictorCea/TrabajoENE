@@ -1,0 +1,38 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    @if (egresosDiarios(); as egresosDiariosRef) {
+      <div>
+        <h2 data-cy="egresosDiariosDetailsHeading"><span jhiTranslate="eneApp.egresosDiarios.detail.title">Egresos Diarios</span></h2>
+
+        <hr />
+
+        <jhi-alert-error></jhi-alert-error>
+
+        <jhi-alert></jhi-alert>
+
+        <dl class="row-md jh-entity-details">
+          <dt><span jhiTranslate="global.field.id">ID</span></dt>
+          <dd>
+            <span>{{ egresosDiariosRef.id }}</span>
+          </dd>
+          <dt><span jhiTranslate="eneApp.egresosDiarios.gastoDiario">Gasto Diario</span></dt>
+          <dd>
+            <span>{{ egresosDiariosRef.gastoDiario }}</span>
+          </dd>
+          <dt><span jhiTranslate="eneApp.egresosDiarios.valorGasto">Valor Gasto</span></dt>
+          <dd>
+            <span>{{ egresosDiariosRef.valorGasto }}</span>
+          </dd>
+        </dl>
+
+        <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+          <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Volver</span>
+        </button>
+
+        <button type="button" [routerLink]="['/egresos-diarios', egresosDiariosRef.id, 'edit']" class="btn btn-primary">
+          <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Editar</span>
+        </button>
+      </div>
+    }
+  </div>
+</div>

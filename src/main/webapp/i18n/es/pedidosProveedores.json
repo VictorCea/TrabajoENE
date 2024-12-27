@@ -1,0 +1,26 @@
+{
+  "eneApp": {
+    "pedidosProveedores": {
+      "home": {
+        "title": "Pedidos Proveedores",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Pedidos Proveedores",
+        "createOrEditLabel": "Crear o editar Pedidos Proveedores",
+        "notFound": "Ningún Pedidos Proveedores encontrado"
+      },
+      "created": "Un nuevo Pedidos Proveedores ha sido creado con el identificador {{ param }}",
+      "updated": "Un Pedidos Proveedores ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Pedidos Proveedores ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Pedidos Proveedores {{ id }}?"
+      },
+      "detail": {
+        "title": "Pedidos Proveedores"
+      },
+      "id": "ID",
+      "producto": "Producto",
+      "cantidad": "Cantidad",
+      "valor": "Valor"
+    }
+  }
+}

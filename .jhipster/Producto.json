@@ -1,0 +1,23 @@
+{
+  "annotations": {
+    "changelogDate": "20241225234426"
+  },
+  "dto": "no",
+  "fields": [
+    {
+      "fieldName": "nombre",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "stock",
+      "fieldType": "Float"
+    }
+  ],
+  "jpaMetamodelFiltering": false,
+  "name": "Producto",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

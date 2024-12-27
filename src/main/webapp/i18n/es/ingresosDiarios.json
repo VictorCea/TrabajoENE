@@ -1,0 +1,25 @@
+{
+  "eneApp": {
+    "ingresosDiarios": {
+      "home": {
+        "title": "Ingresos Diarios",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Ingresos Diarios",
+        "createOrEditLabel": "Crear o editar Ingresos Diarios",
+        "notFound": "Ningún Ingresos Diarios encontrado"
+      },
+      "created": "Un nuevo Ingresos Diarios ha sido creado con el identificador {{ param }}",
+      "updated": "Un Ingresos Diarios ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Ingresos Diarios ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Ingresos Diarios {{ id }}?"
+      },
+      "detail": {
+        "title": "Ingresos Diarios"
+      },
+      "id": "ID",
+      "ventaNumero": "Venta Numero",
+      "valorVenta": "Valor Venta"
+    }
+  }
+}

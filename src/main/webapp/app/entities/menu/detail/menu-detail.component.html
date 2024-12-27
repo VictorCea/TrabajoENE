@@ -1,0 +1,42 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    @if (menu(); as menuRef) {
+      <div>
+        <h2 data-cy="menuDetailsHeading"><span jhiTranslate="eneApp.menu.detail.title">Menu</span></h2>
+
+        <hr />
+
+        <jhi-alert-error></jhi-alert-error>
+
+        <jhi-alert></jhi-alert>
+
+        <dl class="row-md jh-entity-details">
+          <dt><span jhiTranslate="global.field.id">ID</span></dt>
+          <dd>
+            <span>{{ menuRef.id }}</span>
+          </dd>
+          <dt><span jhiTranslate="eneApp.menu.nombrePlato">Nombre Plato</span></dt>
+          <dd>
+            <span>{{ menuRef.nombrePlato }}</span>
+          </dd>
+          <dt><span jhiTranslate="eneApp.menu.valorPlato">Valor Plato</span></dt>
+          <dd>
+            <span>{{ menuRef.valorPlato }}</span>
+          </dd>
+          <dt><span jhiTranslate="eneApp.menu.descripcionPlato">Descripcion Plato</span></dt>
+          <dd>
+            <span>{{ menuRef.descripcionPlato }}</span>
+          </dd>
+        </dl>
+
+        <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+          <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Volver</span>
+        </button>
+
+        <button type="button" [routerLink]="['/menu', menuRef.id, 'edit']" class="btn btn-primary">
+          <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Editar</span>
+        </button>
+      </div>
+    }
+  </div>
+</div>

@@ -1,0 +1,23 @@
+{
+  "annotations": {
+    "changelogDate": "20241226000613"
+  },
+  "dto": "no",
+  "fields": [
+    {
+      "fieldName": "ventaNumero",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "valorVenta",
+      "fieldType": "Integer"
+    }
+  ],
+  "jpaMetamodelFiltering": false,
+  "name": "IngresosDiarios",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

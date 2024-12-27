@@ -1,0 +1,25 @@
+{
+  "eneApp": {
+    "egresosDiarios": {
+      "home": {
+        "title": "Egresos Diarios",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Egresos Diarios",
+        "createOrEditLabel": "Crear o editar Egresos Diarios",
+        "notFound": "Ningún Egresos Diarios encontrado"
+      },
+      "created": "Un nuevo Egresos Diarios ha sido creado con el identificador {{ param }}",
+      "updated": "Un Egresos Diarios ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Egresos Diarios ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Egresos Diarios {{ id }}?"
+      },
+      "detail": {
+        "title": "Egresos Diarios"
+      },
+      "id": "ID",
+      "gastoDiario": "Gasto Diario",
+      "valorGasto": "Valor Gasto"
+    }
+  }
+}

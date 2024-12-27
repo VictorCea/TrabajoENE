@@ -1,0 +1,34 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    @if (mesa(); as mesaRef) {
+      <div>
+        <h2 data-cy="mesaDetailsHeading"><span jhiTranslate="eneApp.mesa.detail.title">Mesa</span></h2>
+
+        <hr />
+
+        <jhi-alert-error></jhi-alert-error>
+
+        <jhi-alert></jhi-alert>
+
+        <dl class="row-md jh-entity-details">
+          <dt><span jhiTranslate="global.field.id">ID</span></dt>
+          <dd>
+            <span>{{ mesaRef.id }}</span>
+          </dd>
+          <dt><span jhiTranslate="eneApp.mesa.numero">Numero</span></dt>
+          <dd>
+            <span>{{ mesaRef.numero }}</span>
+          </dd>
+        </dl>
+
+        <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+          <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Volver</span>
+        </button>
+
+        <button type="button" [routerLink]="['/mesa', mesaRef.id, 'edit']" class="btn btn-primary">
+          <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Editar</span>
+        </button>
+      </div>
+    }
+  </div>
+</div>

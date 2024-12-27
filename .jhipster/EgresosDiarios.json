@@ -1,0 +1,23 @@
+{
+  "annotations": {
+    "changelogDate": "20241226000729"
+  },
+  "dto": "no",
+  "fields": [
+    {
+      "fieldName": "gastoDiario",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "valorGasto",
+      "fieldType": "Integer"
+    }
+  ],
+  "jpaMetamodelFiltering": false,
+  "name": "EgresosDiarios",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

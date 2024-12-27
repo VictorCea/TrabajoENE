@@ -1,0 +1,27 @@
+{
+  "annotations": {
+    "changelogDate": "20241226001402"
+  },
+  "dto": "no",
+  "fields": [
+    {
+      "fieldName": "nombrePlato",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "valorPlato",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "descripcionPlato",
+      "fieldType": "String"
+    }
+  ],
+  "jpaMetamodelFiltering": false,
+  "name": "Menu",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

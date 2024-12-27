@@ -1,0 +1,25 @@
+{
+  "eneApp": {
+    "ordenesCocina": {
+      "home": {
+        "title": "Ordenes Cocinas",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Ordenes Cocina",
+        "createOrEditLabel": "Crear o editar Ordenes Cocina",
+        "notFound": "Ningún Ordenes Cocinas encontrado"
+      },
+      "created": "Un nuevo Ordenes Cocina ha sido creado con el identificador {{ param }}",
+      "updated": "Un Ordenes Cocina ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Ordenes Cocina ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Ordenes Cocina {{ id }}?"
+      },
+      "detail": {
+        "title": "Ordenes Cocina"
+      },
+      "id": "ID",
+      "nombrePlato": "Nombre Plato",
+      "cantidadPlato": "Cantidad Plato"
+    }
+  }
+}

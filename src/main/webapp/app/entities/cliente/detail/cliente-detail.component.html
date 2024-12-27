@@ -1,0 +1,42 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    @if (cliente(); as clienteRef) {
+      <div>
+        <h2 data-cy="clienteDetailsHeading"><span jhiTranslate="eneApp.cliente.detail.title">Cliente</span></h2>
+
+        <hr />
+
+        <jhi-alert-error></jhi-alert-error>
+
+        <jhi-alert></jhi-alert>
+
+        <dl class="row-md jh-entity-details">
+          <dt><span jhiTranslate="global.field.id">ID</span></dt>
+          <dd>
+            <span>{{ clienteRef.id }}</span>
+          </dd>
+          <dt><span jhiTranslate="eneApp.cliente.mesa">Mesa</span></dt>
+          <dd>
+            <span>{{ clienteRef.mesa }}</span>
+          </dd>
+          <dt><span jhiTranslate="eneApp.cliente.orden">Orden</span></dt>
+          <dd>
+            <span>{{ clienteRef.orden }}</span>
+          </dd>
+          <dt><span jhiTranslate="eneApp.cliente.cantidadClientes">Cantidad Clientes</span></dt>
+          <dd>
+            <span>{{ clienteRef.cantidadClientes }}</span>
+          </dd>
+        </dl>
+
+        <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+          <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Volver</span>
+        </button>
+
+        <button type="button" [routerLink]="['/cliente', clienteRef.id, 'edit']" class="btn btn-primary">
+          <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Editar</span>
+        </button>
+      </div>
+    }
+  </div>
+</div>

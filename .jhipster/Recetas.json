@@ -1,0 +1,27 @@
+{
+  "annotations": {
+    "changelogDate": "20241225235842"
+  },
+  "dto": "no",
+  "fields": [
+    {
+      "fieldName": "nombrePlato",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ingredientesPlato",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tiempoPreparacion",
+      "fieldType": "String"
+    }
+  ],
+  "jpaMetamodelFiltering": false,
+  "name": "Recetas",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

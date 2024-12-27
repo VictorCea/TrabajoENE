@@ -1,0 +1,31 @@
+{
+  "annotations": {
+    "changelogDate": "20241225223526"
+  },
+  "dto": "no",
+  "fields": [
+    {
+      "fieldName": "nombre",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "rol",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "rut",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "admin",
+      "fieldType": "Boolean"
+    }
+  ],
+  "jpaMetamodelFiltering": false,
+  "name": "Usuario",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

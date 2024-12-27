@@ -1,0 +1,19 @@
+{
+  "annotations": {
+    "changelogDate": "20241225234534"
+  },
+  "dto": "no",
+  "fields": [
+    {
+      "fieldName": "numero",
+      "fieldType": "Integer"
+    }
+  ],
+  "jpaMetamodelFiltering": false,
+  "name": "Mesa",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

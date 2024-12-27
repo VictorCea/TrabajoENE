@@ -1,0 +1,100 @@
+<div>
+  <h2 id="page-heading" data-cy="RecetasHeading">
+    <span jhiTranslate="eneApp.recetas.home.title">Recetas</span>
+
+    <div class="d-flex justify-content-end">
+      <button class="btn btn-info me-2" (click)="load()" [disabled]="isLoading">
+        <fa-icon icon="sync" [animation]="isLoading ? 'spin' : undefined"></fa-icon>
+        <span jhiTranslate="eneApp.recetas.home.refreshListLabel">Refrescar lista</span>
+      </button>
+
+      <button
+        id="jh-create-entity"
+        data-cy="entityCreateButton"
+        class="btn btn-primary jh-create-entity create-recetas"
+        [routerLink]="['/recetas/new']"
+      >
+        <fa-icon icon="plus"></fa-icon>
+        <span jhiTranslate="eneApp.recetas.home.createLabel">Crear nuevo Recetas</span>
+      </button>
+    </div>
+  </h2>
+
+  <jhi-alert-error></jhi-alert-error>
+
+  <jhi-alert></jhi-alert>
+
+  @if (recetas().length === 0) {
+    <div class="alert alert-warning" id="no-result">
+      <span jhiTranslate="eneApp.recetas.home.notFound">Ningún Recetas encontrado</span>
+    </div>
+  } @else {
+    <div class="table-responsive table-entities" id="entities">
+      <table class="table table-striped" aria-describedby="page-heading">
+        <thead>
+          <tr jhiSort [(sortState)]="sortState" (sortChange)="navigateToWithComponentValues($event)">
+            <th scope="col" jhiSortBy="id">
+              <div class="d-flex">
+                <span jhiTranslate="global.field.id">ID</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="nombrePlato">
+              <div class="d-flex">
+                <span jhiTranslate="eneApp.recetas.nombrePlato">Nombre Plato</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="ingredientesPlato">
+              <div class="d-flex">
+                <span jhiTranslate="eneApp.recetas.ingredientesPlato">Ingredientes Plato</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="tiempoPreparacion">
+              <div class="d-flex">
+                <span jhiTranslate="eneApp.recetas.tiempoPreparacion">Tiempo Preparacion</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (recetas of recetas(); track trackId(recetas)) {
+            <tr data-cy="entityTable">
+              <td>
+                <a [routerLink]="['/recetas', recetas.id, 'view']">{{ recetas.id }}</a>
+              </td>
+              <td>{{ recetas.nombrePlato }}</td>
+              <td>{{ recetas.ingredientesPlato }}</td>
+              <td>{{ recetas.tiempoPreparacion }}</td>
+              <td class="text-end">
+                <div class="btn-group">
+                  <a [routerLink]="['/recetas', recetas.id, 'view']" class="btn btn-info btn-sm" data-cy="entityDetailsButton">
+                    <fa-icon icon="eye"></fa-icon>
+                    <span class="d-none d-md-inline" jhiTranslate="entity.action.view">Vista</span>
+                  </a>
+
+                  <a [routerLink]="['/recetas', recetas.id, 'edit']" class="btn btn-primary btn-sm" data-cy="entityEditButton">
+                    <fa-icon icon="pencil-alt"></fa-icon>
+                    <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Editar</span>
+                  </a>
+
+                  <button type="submit" (click)="delete(recetas)" class="btn btn-danger btn-sm" data-cy="entityDeleteButton">
+                    <fa-icon icon="times"></fa-icon>
+                    <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Eliminar</span>
+                  </button>
+                </div>
+              </td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  }
+</div>

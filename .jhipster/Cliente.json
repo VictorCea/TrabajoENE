@@ -1,0 +1,27 @@
+{
+  "annotations": {
+    "changelogDate": "20241225235026"
+  },
+  "dto": "no",
+  "fields": [
+    {
+      "fieldName": "mesa",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "orden",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cantidadClientes",
+      "fieldType": "Integer"
+    }
+  ],
+  "jpaMetamodelFiltering": false,
+  "name": "Cliente",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

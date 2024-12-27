@@ -1,0 +1,26 @@
+{
+  "eneApp": {
+    "recetas": {
+      "home": {
+        "title": "Recetas",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Recetas",
+        "createOrEditLabel": "Crear o editar Recetas",
+        "notFound": "Ningún Recetas encontrado"
+      },
+      "created": "Un nuevo Recetas ha sido creado con el identificador {{ param }}",
+      "updated": "Un Recetas ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Recetas ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Recetas {{ id }}?"
+      },
+      "detail": {
+        "title": "Recetas"
+      },
+      "id": "ID",
+      "nombrePlato": "Nombre Plato",
+      "ingredientesPlato": "Ingredientes Plato",
+      "tiempoPreparacion": "Tiempo Preparacion"
+    }
+  }
+}

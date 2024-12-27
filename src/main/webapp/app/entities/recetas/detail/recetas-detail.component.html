@@ -1,0 +1,42 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    @if (recetas(); as recetasRef) {
+      <div>
+        <h2 data-cy="recetasDetailsHeading"><span jhiTranslate="eneApp.recetas.detail.title">Recetas</span></h2>
+
+        <hr />
+
+        <jhi-alert-error></jhi-alert-error>
+
+        <jhi-alert></jhi-alert>
+
+        <dl class="row-md jh-entity-details">
+          <dt><span jhiTranslate="global.field.id">ID</span></dt>
+          <dd>
+            <span>{{ recetasRef.id }}</span>
+          </dd>
+          <dt><span jhiTranslate="eneApp.recetas.nombrePlato">Nombre Plato</span></dt>
+          <dd>
+            <span>{{ recetasRef.nombrePlato }}</span>
+          </dd>
+          <dt><span jhiTranslate="eneApp.recetas.ingredientesPlato">Ingredientes Plato</span></dt>
+          <dd>
+            <span>{{ recetasRef.ingredientesPlato }}</span>
+          </dd>
+          <dt><span jhiTranslate="eneApp.recetas.tiempoPreparacion">Tiempo Preparacion</span></dt>
+          <dd>
+            <span>{{ recetasRef.tiempoPreparacion }}</span>
+          </dd>
+        </dl>
+
+        <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+          <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Volver</span>
+        </button>
+
+        <button type="button" [routerLink]="['/recetas', recetasRef.id, 'edit']" class="btn btn-primary">
+          <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Editar</span>
+        </button>
+      </div>
+    }
+  </div>
+</div>
